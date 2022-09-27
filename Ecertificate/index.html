@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>https://archive.nptel.ac.in/</title>
+  </head>
+  <body>
+    <center>
+      <img
+        id="certificate"
+        alt="Ecertificate Verification"
+        style="width: 40%; margin: 30px"
+      />
+    </center>
+    <script>
+      let img = document.getElementById("certificate");
+      let url = window.location.search;
+      if (url === "?q=NPTEL22CS19S13390040") {
+        img.src = "./data:image_NPTEL22CS19S13390040.png";
+      } else {
+        document.write("Fail");
+      }
+    </script>
+  </body>
+</html>
